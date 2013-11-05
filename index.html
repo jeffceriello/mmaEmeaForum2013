@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="robots" content="index, follow">
+
+<meta name="copyright" content="" />
+<meta name="author" content="" />
+<meta name="email" content="" />
+
+<title>MMA EMEA Forum London 2013: Application Download</title>
+
+<meta name="viewport" id="viewport">
+<!--<script>
+    (function(doc) {
+        var viewport = document.getElementById('viewport');
+        if ( navigator.userAgent.match(/iPhone/i) || (navigator.userAgent.match(/Android/i)) || navigator.userAgent.match(/iPod/i)) {
+            doc.getElementById("viewport").setAttribute("content", "width=480");
+        } else if ( navigator.userAgent.match(/iPad/i) ) {
+            doc.getElementById("viewport").setAttribute("content", "width=1060");
+        }
+    }(document));
+</script>-->
+
+<link type="text/css" rel="stylesheet" media="screen" href="css/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="css/reset.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<img src="images/mma-logo.png" class="logo">
+      <h1>MMA EMEA FORUM 2013</h1>
+        <hr>
+        <h2>11-12 November 2013, London, UK</h2>
+        <div id="hide1"><a href="#" class="applink">DOWNLOAD THE APPLICATION</a></div>
+        <div id="hide2" class="box">VISIT THIS PAGE ON YOUR TABLET OR MOBILE TO DOWNLOAD THE APPLICATION</div>
+        <div id="hide3" class="box">PLEASE UPDATE TO THE LATEST OPERATING SYSTEM TO DOWNLOAD THIS APP</div>
+        <img src="images/mma-app.png">
+        <p>The MMA EMEA Forum 2013 application is available for download on Apple devices running iOS 6 or iOS 7 and Android devices running 4.0 and above.</p>
+    </div>
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>			
+
+<script>
+    jQuery(document).ready(function($){
+		// desktop
+		$('#hide1, #hide3').hide();
+
+
+		// iOS
+		if(/(iPhone|iPod|iPad)/i.test(navigator.userAgent)) { 
+			if(/OS [2-5]_\d(_\d)? like Mac OS X/i.test(navigator.userAgent)) {  
+				// iOS 2-4 so Do Something   
+				$('#hide3').show();
+				$('#hide1, #hide2').hide();
+			} else if(/CPU like Mac OS X/i.test(navigator.userAgent)) {
+				// iOS 1 so Do Something 
+				$('#hide3').show();
+				$('#hide1, #hide2').hide();
+			} else {
+				// iOS 6 or Newer so Do Nothing
+				$('#hide1').show();
+				$('#hide2, #hide3').hide();
+			}
+		}
+		
+		
+		// android
+		var ua = navigator.userAgent;
+		if( ua.indexOf("Android") >= 0 )
+		{
+		  var androidversion = parseFloat(ua.slice(ua.indexOf("Android")+8)); 
+		  if (androidversion < 4.0)
+		  {
+			  $('#hide3').show();
+			  $('#hide1, #hide2').hide();
+		  }else{
+			  $('#hide1').show();
+			  $('#hide2, #hide3').hide();
+		  }
+		}
+		
+    });
+</script> 
+
+</body>
+
+</html>

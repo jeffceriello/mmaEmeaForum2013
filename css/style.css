@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Design by Evil Donkey */
+
+
+/* Font Markup */
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('font/gotham-bold-webfont.eot');
+    src: url('font/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/gotham-bold-webfont.woff') format('woff'),
+         url('font/gotham-bold-webfont.ttf') format('truetype'),
+         url('font/gotham-bold-webfont.svg#GothamBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('font/helveticaneue-light.eot');
+    src: url('font/helveticaneue-light.eot') format('embedded-opentype'),
+         url('font/helveticaneue-light.woff') format('woff'),
+         url('font/helveticaneue-light.ttf') format('truetype'),
+         url('font/helveticaneue-light.svg#HelveticaNeueLight') format('svg');
+}
+
+
+/* Global Markup */
+
+body { background: url('../images/mma-bg.png') no-repeat top right; letter-spacing: 0.2em; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-family: 'GothamBold'; text-transform: uppercase; }
+h1 { font-size: 54px; color: #f36f21; line-height: 60px; }
+h2 { font-size: 30px; color: #999999; line-height: 46px; }
+a, a:active {  }
+a:hover {  }
+
+hr { width: 110px; height: 12px; border: 0; background: #f36f21; margin: 25px auto !important; display: block; }
+
+#wrapper { max-width: 1020px; margin: 0 auto; text-align: center; }
+#wrapper .logo { margin: 60px auto; display: block; }
+#wrapper img { max-width: 100%; }
+#wrapper p { padding: 80px 70px; font-family: 'HelveticaNeueLight'; color: #999; display: block; font-size: 26px; }
+#wrapper a.applink { font-family: 'GothamBold'; text-transform: uppercase; color: #FFF; font-size: 26px; padding: 30px 40px; background: url('../images/mma-applinkbg.gif'); display: block; width: 510px; height: 25px; margin: 50px auto 30px auto; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-shadow:  1px 2px 4px 2px #CCC; box-shadow:  1px 2px 4px 2px #CCC; }
+
+.box { font-family: 'GothamBold'; text-transform: uppercase; color: #FFF; font-size: 26px; padding: 30px 40px; background: url('../images/mma-applinkbg2.gif'); display: block; width: 510px; margin: 50px auto 30px auto; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-shadow:  1px 2px 4px 2px #CCC; box-shadow:  1px 2px 4px 2px #CCC; }
+
+
+
+/* Media Query */
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	
+}
+
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width : 480px) {
+	
+	#wrapper p { padding: 50px 10px; letter-spacing: 0.12em; font-size: 22px; }
+	#wrapper a.applink { font-size: 22px; padding: 30px 10px; width: 420px; height: 25px; margin: 35px auto 50px auto; letter-spacing: 0.09em; }
+		
+}
